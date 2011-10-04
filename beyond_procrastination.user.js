@@ -10,12 +10,15 @@
 // @include       http://*.twitter.com/*
 // @include       https://twitter.com/*
 // @include       https://*.twitter.com/*
+// @include       https://www.facebook.com/*
+// @include       https://plus.google.com/*
+// @include       https://www.google.com/reader/*
 // @run-at        document-start
 // ==/UserScript==
 
 /* settings */
 var settings = [];
-settings['min_away'] = 180; // minutes
+settings['min_away'] = 90; // minutes
 settings['max_visit'] = 20; // minutes
 settings['global'] = false; // if true, apply to all sites this script runs on
 
