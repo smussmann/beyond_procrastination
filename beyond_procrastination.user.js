@@ -96,6 +96,8 @@ else if (current_time > (initial_time + max_visit))
     leave_style += "padding:5px;";
     leave_style += "border:1px solid black;";
     leave_style += "background-color:#eee;";
-    document.body.innerHTML = "<div style=\""+leave_style+"\">"+leave_msg+"</div>";
+    addEvent(window, 'load', function(event) {
+        document.body.innerHTML = "<div style=\""+leave_style+"\">"+leave_msg+"</div>";
+    });
 }
 // you're still allowed to view this site ... for now.
