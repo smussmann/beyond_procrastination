@@ -96,7 +96,7 @@ else if (current_time > (initial_time + max_visit))
     leave_style += "padding:5px;";
     leave_style += "border:1px solid black;";
     leave_style += "background-color:#eee;";
-    window.addEventListener('load', function(event) {
+    window.addEventListener('DOMContentLoaded', function(event) {
         document.body.innerHTML = "<div style=\""+leave_style+"\">"+leave_msg+"</div>";
     });
 }
