@@ -10,7 +10,9 @@
 // @include       http://*.twitter.com/*
 // @include       https://twitter.com/*
 // @include       https://*.twitter.com/*
+// @include       https://www.facebook.com/
 // @include       https://www.facebook.com/*
+// @include       https://plus.google.com/
 // @include       https://plus.google.com/*
 // @include       https://www.google.com/reader/*
 // @run-at        document-start
@@ -33,6 +35,9 @@ else
 {
     time_key = 'initial-time_' + location.host;
 }
+
+console.log(time_key);
+
 // convert min_away and max_visit to milliseconds
 MIN_TO_MS = 60 * 1000;
 min_away = settings['min_away'] * MIN_TO_MS;
